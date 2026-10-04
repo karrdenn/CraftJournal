@@ -15,8 +15,11 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         for _ in 0..<10 {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
+            let entry = CraftEntry(context: viewContext)
+            entry.id = UUID()
+            entry.title = "Sample Entry"
+            entry.craftType = "Thagzo"
+            entry.date = Date()
         }
         do {
             try viewContext.save()
@@ -32,7 +35,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "Zorig_Craft_Journal")
+        container = NSPersistentContainer(name: "Craft_Journal")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }

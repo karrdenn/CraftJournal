@@ -6,14 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		155838B7306BC681006E3FDA /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155838B6306BC681006E3FDA /* CameraView.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
-		1558389A306BA068006E3FDA /* Zorig Craft Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zorig Craft Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1558389A306BA068006E3FDA /* Craft Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Craft Journal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		155838B6306BC681006E3FDA /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		1558389C306BA068006E3FDA /* Zorig Craft Journal */ = {
+		1558389C306BA068006E3FDA /* Craft Journal */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Zorig Craft Journal";
+			path = "Craft Journal";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +37,8 @@
 		15583891306BA068006E3FDA = {
 			isa = PBXGroup;
 			children = (
-				1558389C306BA068006E3FDA /* Zorig Craft Journal */,
+				155838B6306BC681006E3FDA /* CameraView.swift */,
+				1558389C306BA068006E3FDA /* Craft Journal */,
 				1558389B306BA068006E3FDA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -40,7 +46,7 @@
 		1558389B306BA068006E3FDA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1558389A306BA068006E3FDA /* Zorig Craft Journal.app */,
+				1558389A306BA068006E3FDA /* Craft Journal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,9 +54,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		15583899306BA068006E3FDA /* Zorig Craft Journal */ = {
+		15583899306BA068006E3FDA /* Craft Journal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 155838AA306BA069006E3FDA /* Build configuration list for PBXNativeTarget "Zorig Craft Journal" */;
+			buildConfigurationList = 155838AA306BA069006E3FDA /* Build configuration list for PBXNativeTarget "Craft Journal" */;
 			buildPhases = (
 				15583896306BA068006E3FDA /* Sources */,
 				15583897306BA068006E3FDA /* Frameworks */,
@@ -61,13 +67,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				1558389C306BA068006E3FDA /* Zorig Craft Journal */,
+				1558389C306BA068006E3FDA /* Craft Journal */,
 			);
-			name = "Zorig Craft Journal";
+			name = "Craft Journal";
 			packageProductDependencies = (
 			);
 			productName = "Zorig Craft Journal";
-			productReference = 1558389A306BA068006E3FDA /* Zorig Craft Journal.app */;
+			productReference = 1558389A306BA068006E3FDA /* Craft Journal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -85,7 +91,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 15583895306BA068006E3FDA /* Build configuration list for PBXProject "Zorig Craft Journal" */;
+			buildConfigurationList = 15583895306BA068006E3FDA /* Build configuration list for PBXProject "Craft Journal" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -99,7 +105,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				15583899306BA068006E3FDA /* Zorig Craft Journal */,
+				15583899306BA068006E3FDA /* Craft Journal */,
 			);
 		};
 /* End PBXProject section */
@@ -119,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155838B7306BC681006E3FDA /* CameraView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +256,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SYGF6R865;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to photograph craft items";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -263,8 +273,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Zorig-Craft-Journal";
+				PRODUCT_BUNDLE_IDENTIFIER = bt.edu.cst.karmayangden.CraftJournal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -280,10 +291,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6SYGF6R865;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses the camera to photograph craft items";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -294,8 +308,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Zorig-Craft-Journal";
+				PRODUCT_BUNDLE_IDENTIFIER = bt.edu.cst.karmayangden.CraftJournal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
@@ -309,7 +324,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		15583895306BA068006E3FDA /* Build configuration list for PBXProject "Zorig Craft Journal" */ = {
+		15583895306BA068006E3FDA /* Build configuration list for PBXProject "Craft Journal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				155838A8306BA069006E3FDA /* Debug */,
@@ -318,7 +333,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		155838AA306BA069006E3FDA /* Build configuration list for PBXNativeTarget "Zorig Craft Journal" */ = {
+		155838AA306BA069006E3FDA /* Build configuration list for PBXNativeTarget "Craft Journal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				155838AB306BA069006E3FDA /* Debug */,
